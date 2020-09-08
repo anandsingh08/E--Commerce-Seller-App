@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fffdd0"
+    tools:context=".FillproductFragment">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        android:clickable="true"
+        android:id="@+id/add_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:shadowColor="#9a8890"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/productphoto"
+        android:layout_toLeftOf="@+id/add_image"
+        android:layout_marginLeft="40dp"
+        android:src="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Description"
+        android:id="@+id/prod"
+        android:layout_below="@+id/add_image"
+        android:layout_marginLeft="30dp"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/productdescription"
+        android:layout_below="@+id/prod"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#eefbfb"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:id="@+id/quan"
+        android:layout_below="@+id/productdescription"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/quan"
+        android:layout_below="@+id/productdescription"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:background="#eefbfb"
+        android:text="00"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/quan"
+        android:layout_marginTop="50dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:clickable="true"/>
+
+</RelativeLayout>

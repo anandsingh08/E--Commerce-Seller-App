@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <Button
+        android:layout_width="match_parent"
+        android:textSize="22sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Language"
+        android:textColor="#ff0000"
+        android:id="@+id/first"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Mobile Number"
+        android:textColor="#ff0000"
+        android:id="@+id/second"
+        android:layout_below="@+id/first"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Edit Products"
+        android:textColor="#ff0000"
+        android:id="@+id/third"
+        android:layout_below="@+id/second"/>
+
+
+</RelativeLayout>
